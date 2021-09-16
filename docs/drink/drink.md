@@ -1,0 +1,43 @@
+---
+sidebar_position: 1
+---
+# 飲品
+## 紅茶
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+:::info 飲品資訊
+<Tabs
+defaultValue="price"
+values={[
+    {label: '價錢', value: 'price'},
+    {label: '備註', value: 'remark'},
+]}>
+    <TabItem value="price">1 5</TabItem>
+    <TabItem value="remark">360 毫升。冷飲。甜度及冰量固定。</TabItem>
+</Tabs>
+:::
+## 鮮奶茶
+:::info 飲品資訊
+<Tabs
+defaultValue="price"
+values={[
+{label: '價錢', value: 'price'},
+{label: '備註', value: 'remark'},
+]}>
+<TabItem value="price">3 5</TabItem>
+<TabItem value="remark">360 毫升。冷飲。甜度及冰量固定。</TabItem>
+</Tabs>
+:::
+## 燕麥奶茶
+:::info 飲品資訊
+<Tabs
+defaultValue="price"
+values={[
+{label: '價錢', value: 'price'},
+{label: '備註', value: 'remark'},
+]}>
+<TabItem value="price">4 5</TabItem>
+<TabItem value="remark">360 毫升。冷飲。甜度及冰量固定。</TabItem>
+</Tabs>
+:::
