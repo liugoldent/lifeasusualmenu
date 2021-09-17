@@ -40,6 +40,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      googleAnalytics: {
+        trackingID: 'UA-145633929-4',
+        // Optional fields.
+        anonymizeIP: true, // Should IPs be anonymized?
+      },
       navbar: {
         title: '如常 朝午食',
         logo: {
