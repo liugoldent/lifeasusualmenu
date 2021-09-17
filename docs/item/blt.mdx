@@ -1,24 +1,15 @@
 # 加了薯泥的BLT
 ![blt](/img/item/DSC_4828.jpg)
 
-import Tabs from '@theme/Tabs';
-import TabItem from '@theme/TabItem';
+import PublicLayout from '../publicComponent.js'
+const priceValue = '65'
+const contentValue = ['培根','薯泥','生菜','番茄']
+const narrateValue = '特製蔓越莓薯泥搭配經典培根生菜番茄三明治，再淋上一點楓糖，令人無法抗拒的鹹甜滋味'
 
 :::info
-<Tabs
-defaultValue="price"
-values={[
-    {label: '價錢', value: 'price'},
-    {label: '內容', value: 'remark'},
-]}>
-    <TabItem value="price"> <strong>N T：6 5 </strong></TabItem>
-    <TabItem value="remark">
-        <ul>
-            <li><strong>培根</strong></li>
-            <li><strong>薯泥</strong></li>
-            <li><strong>番茄</strong></li>
-            <li><strong>生菜</strong></li>
-        </ul>
-    </TabItem>
-</Tabs>
+<PublicLayout
+    price={priceValue}
+    content={contentValue}
+    narrate={narrateValue}
+ />
 :::

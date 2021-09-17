@@ -5,6 +5,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
+import useThemeContext from '@theme/hooks/useThemeContext'; //docs: https://v2.docusaurus.io/docs/2.0.0-alpha.69/theme-classic#usethemecontext
+
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -26,9 +28,11 @@ function HomepageHeader() {
 }
 
 function SelfHome(){
+    const {isDarkTheme, setLightTheme, setDarkTheme} = useThemeContext();
+    const imgString = isDarkTheme ? 'img/logosvg_darkmode.svg' : 'img/logo.svg'
     return (
         <div className={styles.selfHome}>
-            <img src="img/logo.svg" />
+            <img src={imgString} />
         </div>
     )
 }
@@ -41,10 +45,6 @@ export default function Home() {
         <main>
             <SelfHome />
         </main>
-      {/*<HomepageHeader />*/}
-      {/*<main>*/}
-      {/*  <HomepageFeatures />*/}
-      {/*</main>*/}
     </Layout>
   );
 }

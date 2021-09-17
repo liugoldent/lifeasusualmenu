@@ -10,7 +10,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/tablogo.png',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
@@ -53,7 +53,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
             position: 'left',
             label: '菜單',
           },
-          {to: '/blog', label: '最新消息', position: 'left'},
+          // {to: '/blog', label: '最新消息', position: 'left'},
           {
             href: 'https://www.ubereats.com/tw/store/%E5%A6%82%E5%B8%B8%E6%9C%9D%E5%8D%88%E9%A3%9F/L6gNkVeARICJIJZJ0XJghQ',
             label: '| Uber Eats',
