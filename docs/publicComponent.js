@@ -10,9 +10,9 @@ function InfoComponent({price, content, narrate}) {
         <Tabs
             defaultValue="price"
             values={[
-                {label: '價錢', value: 'price'},
+                {label: '價格', value: 'price'},
                 {label: '內容', value: 'content'},
-                {label: '敘述', value: 'narrate'}
+                {label: '介紹', value: 'narrate'}
             ]}>
             <TabItem value="price"> <strong>N T：{ price } </strong></TabItem>
             <TabItem value="content">
