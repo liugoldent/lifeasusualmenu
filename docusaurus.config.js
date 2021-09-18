@@ -60,6 +60,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
           },
           // {to: '/blog', label: '最新消息', position: 'left'},
           {
+            href: 'https://www.google.com/maps/place/%E5%A6%82%E5%B8%B8%E6%9C%9D%E5%8D%88%E9%A3%9F/@25.0611277,121.5347155,15z/data=!4m5!3m4!1s0x0:0xcaca5a6e36f7fdf5!8m2!3d25.0611277!4d121.5347155',
+            label: '| Google Map',
+            position: 'right',
+          },
+          {
             href: 'https://www.ubereats.com/tw/store/%E5%A6%82%E5%B8%B8%E6%9C%9D%E5%8D%88%E9%A3%9F/L6gNkVeARICJIJZJ0XJghQ',
             label: '| Uber Eats',
             position: 'right',
