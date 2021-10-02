@@ -1,34 +1,26 @@
 ---
 slug: mdx-blog-post
-title: MDX Blog Post
-authors: [slorber]
-tags: [docusaurus]
+title: 迴廊
+authors: []
+tags: [menu]
 ---
+import ReactDOM from 'react-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import allItems from './item.json'
 
-Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).
-
-export const Test = ()=>{
+export const Test = () => {
+  const itemList = allItems.items.map((item, index)=>
+    <div key={index}>
+        <img src={item.link} />
+        <p className="legend" >{item.name}</p>
+    </div>
+  );
   return (
-   <>
-       <h1> Hello </h1>
-   </>
-  )
+      <Carousel autoPlay infiniteLoop dynamicHeight interval="2000">
+        {itemList}
+      </Carousel>
+  );
 }
 
-:::tip
-
-Use the power of React to create interactive blog posts.
-
-```js
-<button onClick={() => alert('button clicked!')}>Click me!</button>
-```
-
-<button onClick={() => alert('button clicked!')}>Click me!</button>
-<a href="https://www.google.com.tw/">Go</a>
-
-:::
-
-<Test/>
-<Test/>
-<Test/>
 <Test/>
