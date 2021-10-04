@@ -13,10 +13,11 @@ export const CarouselPic = () => {
   const itemList = allItems.items.map((item, index)=>
     <div key={index}>
         <img src={item.link} />
+        <p className="legend">{item.name}</p>
     </div>
   );
   return (
-      <Carousel autoPlay infiniteLoop dynamicHeight interval="2000">
+      <Carousel autoPlay infiniteLoop dynamicHeight interval="2000" animationHandler="fade">
         {itemList}
       </Carousel>
   );
