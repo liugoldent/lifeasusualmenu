@@ -2,6 +2,11 @@ import React from 'react'
 import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import allItems from './item.json'
+
+
 function InfoComponent({price, content, narrate}) {
     const contentItem = content.map((item, index) =>
         <li key={index}><strong>{item}</strong></li>
@@ -55,7 +60,7 @@ function OrderBtn (){
     )
 }
 
-export default function PublicLayout (prop){
+export const PublicLayout = function (prop){
     return (
         <>
             <InfoComponent
@@ -67,4 +72,19 @@ export default function PublicLayout (prop){
             <OrderBtn />
         </>
     )
+}
+
+
+// 輪播區
+export const CarouselPic = function() {
+  const itemList = allItems.items.map((item, index)=>
+    <div key={index}>
+      <img src={item.link} />
+    </div>
+  );
+  return (
+    <Carousel autoPlay infiniteLoop interval="2000" showStatus={false} showThumbs={false} >
+      {itemList}
+    </Carousel>
+  );
 }

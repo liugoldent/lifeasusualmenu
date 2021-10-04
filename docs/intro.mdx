@@ -4,27 +4,8 @@ sidebar_position: 1
 # 如常の菜單
 
 <!-- 輪播圖片專區 -->
-import ReactDOM from 'react-dom';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
-import allItems from './item.json'
-
-export const CarouselPic = () => {
-  const itemList = allItems.items.map((item, index)=>
-    <div key={index}>
-        <img src={item.link} />
-        <p className="legend">{item.name}</p>
-    </div>
-  );
-  return (
-      <Carousel autoPlay infiniteLoop dynamicHeight interval="2000" animationHandler="fade">
-        {itemList}
-      </Carousel>
-  );
-}
-
+import { CarouselPic } from './publicComponent.js'
 <CarouselPic />
-
 
 <!-- 正式菜單專區（連結）-->
 
