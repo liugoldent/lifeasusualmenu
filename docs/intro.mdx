@@ -1,8 +1,31 @@
 ---
 sidebar_position: 1
 ---
-
 # 如常の菜單
+
+<!-- 輪播圖片專區 -->
+import ReactDOM from 'react-dom';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+import allItems from './item.json'
+
+export const CarouselPic = () => {
+  const itemList = allItems.items.map((item, index)=>
+    <div key={index}>
+        <img src={item.link} />
+    </div>
+  );
+  return (
+      <Carousel autoPlay infiniteLoop dynamicHeight interval="2000">
+        {itemList}
+      </Carousel>
+  );
+}
+
+<CarouselPic />
+
+
+<!-- 正式菜單專區（連結）-->
 
 ### 🥪 來點鹹的
 * [南蠻雞肉塔塔醬](item/nanban_chicken.mdx)
