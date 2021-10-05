@@ -103,7 +103,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
         //     ],
         //   },
         // ],
-        copyright: `Copyright © ${new Date().getFullYear()} 如常 朝午食`,
+        // copyright: `Copyright © ${new Date().getFullYear()} 如常 朝午食`,
+        copyright: `如常朝午食 📍 台北市中山區松江路297巷19號1樓 `,
       },
       prism: {
         theme: lightCodeTheme,
