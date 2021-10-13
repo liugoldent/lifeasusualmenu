@@ -50,8 +50,8 @@ function OrderBtn (){
         <>
             <button style={buttonStyle}>
                 <a  style={aStyle}
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSeMokkzZRT7WjBYrssqX_Y6X5oSn3EIk6JVa0bjzzhVKJdj8w/viewform"
-                    target="https://docs.google.com/forms/d/e/1FAIpQLSeMokkzZRT7WjBYrssqX_Y6X5oSn3EIk6JVa0bjzzhVKJdj8w/viewform"
+                    href="https://reurl.cc/vg074l"
+                    target="https://reurl.cc/vg074l"
                 >
                     <strong style={fontStyle}>點餐去</strong>
                 </a>
